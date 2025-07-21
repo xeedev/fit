@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Fitness Content",
-  description: "powered by 778mobile.com",
+  description: "Powered by 778mobile.com",
 };
 
 export default function RootLayout({ children }) {

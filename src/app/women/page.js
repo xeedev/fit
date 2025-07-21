@@ -63,6 +63,7 @@ export default function WomenFitnessPortal() {
   const selectVideo = (index) => {
     setCurrentVideoIndex(index);
     setIsPlaying(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const togglePlayPause = () => {
@@ -77,7 +78,7 @@ export default function WomenFitnessPortal() {
       <div className="min-h-screen bg-gray-900 text-white">
         {/* Header */}
         <header className="bg-gray-800 p-4 flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-center">Women&apos;s Fitness</h1>
+          <h1 className="text-2xl font-bold text-center">Women&apos;s Fitness</h1>
           <Link href="/" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Men&apos;s Workouts
           </Link>

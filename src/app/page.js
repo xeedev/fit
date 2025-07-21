@@ -94,6 +94,7 @@ export default function FitnessPortal() {
 
   const selectVideo = (index) => {
     setCurrentVideoIndex(index);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const togglePlayPause = () => {
@@ -131,7 +132,7 @@ export default function FitnessPortal() {
               />
 
               {/* Custom Controls Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-10 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black bg-opacity-10 opacity-0 hover:opacity-60 transition-opacity duration-300 flex items-center justify-center">
                 <div className="flex items-center space-x-4">
                   <button
                       onClick={playPreviousVideo}
